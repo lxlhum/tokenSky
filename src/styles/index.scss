@@ -1,0 +1,64 @@
+@import './reset.scss';
+
+img {
+  vertical-align: middle;
+}
+
+body {
+  font-size: 16px;
+  width: 100%;
+  height: 100%
+}
+
+.el-table {
+  color: #313D57;
+  font-weight: bold;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  thead {
+    color: #5B3CBB;
+    font-weight: bold;
+  }
+  th {
+    padding: 30px 0
+  }
+  th > .cell {
+    word-break: break-word;
+    font-size: 20px;
+  }
+}
+
+.el-table th.is-leaf, .el-table td {
+  border-bottom: none
+}
+
+.el-table--enable-row-hover .el-table__body tr:hover > td {
+  background-color: transparent
+}
+
+.el-table__row {
+  height: 86px;
+  font-size: 18px;
+}
+
+.el-dropdown-menu {
+  background-color: #161022;
+  border-color: #22236A;
+  font-weight: 600;
+  text-align: center;
+  top: 70px!important;
+  &__item {
+    color: #fff
+  }
+}
+
+.el-dropdown-menu__item:not(.is-disabled):hover {
+  background-color: transparent;
+}
+
+.el-popper[x-placement^="bottom"] .popper__arrow {
+  border-bottom-color: #22236A;
+  &::after {
+    border-bottom-color: #161022
+  }
+}
